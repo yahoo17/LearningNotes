@@ -148,11 +148,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="100个线程比赛mutex实现.cpp" />
+    <ClCompile Include="atomic交替打印.cpp" />
     <ClCompile Include="C++11thread lock_guard.cpp" />
     <ClCompile Include="C++11匿名函数.cpp" />
     <ClCompile Include="condition_variable.cpp" />
     <ClCompile Include="创建线程 类做参数.cpp" />
     <ClCompile Include="100个线程比赛.cpp" />
+    <ClCompile Include="源.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

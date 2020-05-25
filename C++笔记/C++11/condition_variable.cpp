@@ -11,6 +11,8 @@
 //{
 //	{
 //		unique_lock<mutex> waitul(m1);
+//		// unique_lock尝试对m1上锁,拿到锁后后面三个进程都会阻塞
+//
 //		cout<<"waiting \n";
 //		cv.wait(waitul, [] {return i == 1; });
 //		printf(" finish wait\n");
@@ -20,21 +22,19 @@
 //void Notify()
 //{
 //	this_thread::sleep_for(chrono::seconds(1));
+//
 //	{
 //		lock_guard<mutex> lk(m1);
-//		
-//		//
 //		printf("notify once\n");
-//		
 //		
 //	}
 //	cv.notify_all();
+//
 //	this_thread::sleep_for(chrono::seconds(1));
+//
 //	{
 //		lock_guard<mutex> lk(m1);
 //		i = 1;
-//		
-//		
 //		printf("notify second\n");
 //		
 //	}
